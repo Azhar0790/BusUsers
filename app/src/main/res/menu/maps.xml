@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/trialperiod"
+        android:title="Account"
+        android:visible="false"/>
+    <item
+        android:id="@+id/message"
+        android:title="Driver's message"/>
+    <item
+        android:id="@+id/admin_message"
+        android:title="System Notification"/>
+    <item
+        android:id="@+id/cust_feedback"
+        android:title="Customer Service"/>
+    <item
+        android:id="@+id/share"
+        android:title="Share App"/>
+    <item
+        android:id="@+id/close"
+        android:title="Logout"/>
+</menu>

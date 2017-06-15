@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "736482634597",
+    "firebase_url": "https://bus-passenger-159512.firebaseio.com",
+    "project_id": "bus-passenger-159512",
+    "storage_bucket": "bus-passenger-159512.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:736482634597:android:da791e86edc984b3",
+        "android_client_info": {
+          "package_name": "busdriver.com.vipassengers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "736482634597-p83or16itv0ei44v38bro4snh0u1snm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "busdriver.com.vipassengers",
+            "certificate_hash": "7337b1b40cb5aa8f0023d48e8b7698e69854097b"
+          }
+        },
+        {
+          "client_id": "736482634597-99k8vj902ap1uhnjpj0vlqj2a9gaig08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYVFH6VbQl72KROemIJqdVM3goNPI_OX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "736482634597-99k8vj902ap1uhnjpj0vlqj2a9gaig08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

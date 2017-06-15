@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'Bus User Key'
+            keyPassword 'bususer@123'
+            storeFile file('D:/Azhar/Credentials/Bususer/clientCredentials/bus_user.jks')
+            storePassword 'bususer@123'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    useLibrary 'org.apache.http.legacy'
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    defaultConfig {
+        applicationId "busdriver.com.vipassengers"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 14
+        versionName "v0.63"
+        multiDexEnabled true
+        manifestPlaceholders = [onesignal_app_id               : "16a620ed-e030-4700-9fa4-e9acf0de0466",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "REMOTE"]
+    }
+    buildTypes {
+        debug {
+//            debuggable true
+//            signingConfig signingConfigs.config
+        }
+        release {
+            debuggable false
+            signingConfig signingConfigs.config
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/org.apache.http.legacy.jar')
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.google.android.gms:play-services:9.6.1'
+    compile 'com.google.firebase:firebase-messaging:9.0.2'
+    compile 'com.google.firebase:firebase-core:9.0.2'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.inthecheesefactory.thecheeselibrary:fb-like:1.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.google.android.gms:play-services-ads:9.6.1'
+    compile 'com.google.android.gms:play-services-auth:9.6.1'
+    compile 'com.google.android.gms:play-services-gcm:9.6.1'
+}
+apply plugin: 'com.google.gms.google-services'
